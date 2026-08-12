@@ -1,0 +1,19 @@
+generated: '2026-08-12'
+method: searched
+source: https://elorian.ai/
+plan_count: 0
+note: >-
+  Elorian AI publishes no pricing or plans of any kind. The company is
+  pre-product: elorian.ai is a four-page static site (index, models, team,
+  press) and the models page states the first foundation visual thinking model
+  "will be released later this year", offering only an early-access waitlist
+  form. /pricing returns 404 and no plan, tier, quota or contact-sales pricing
+  page exists anywhere on the site. This is a genuine zero, not an
+  enterprise-only "contact us" gate — there is no product to price yet.
+evidence:
+- url: https://elorian.ai/pricing
+  status: 404
+- url: https://elorian.ai/models.html
+  status: 200
+  note: waitlist for unreleased model; no pricing
+plans: []

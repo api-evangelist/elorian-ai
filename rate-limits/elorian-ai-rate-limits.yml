@@ -1,0 +1,20 @@
+generated: '2026-08-12'
+method: searched
+source: https://elorian.ai/
+limit_count: 0
+note: >-
+  No rate limits are documented because no public API exists. Elorian AI
+  publishes no developer portal, API reference or machine-readable
+  specification, and api.elorian.ai does not resolve. The only HTTP endpoint on
+  the site is /api/waitlist, a Cloudflare Worker backing the marketing
+  waitlist form (Turnstile-protected, answers 405 to GET) — it is a website
+  form handler, not a published API, and no limits or rate-limit response
+  headers are documented for it.
+evidence:
+- url: https://elorian.ai/api/waitlist
+  status: 405
+  note: form-submission endpoint, GET not allowed
+- url: https://elorian.ai/docs
+  status: 404
+rate_limits: []
+headers: []

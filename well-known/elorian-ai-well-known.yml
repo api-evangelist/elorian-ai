@@ -1,0 +1,55 @@
+generated: '2026-08-12'
+method: probed
+source: live probes of https://elorian.ai/.well-known/*
+note: >-
+  Every /.well-known/ path probed on the only host Elorian AI operates
+  (elorian.ai) returned a hard 404 with a zero-byte body — these are real
+  absences, not SPA catch-alls. No WellKnown or SecurityTxt pointer is emitted
+  in apis.yml, because the provider serves none of these documents. The
+  api./docs./developer. subdomains do not resolve (NXDOMAIN), so there was no
+  second host to probe.
+hosts:
+- host: elorian.ai
+  resolves: true
+- host: api.elorian.ai
+  resolves: false
+  note: NXDOMAIN
+- host: docs.elorian.ai
+  resolves: false
+  note: NXDOMAIN
+- host: developer.elorian.ai
+  resolves: false
+  note: NXDOMAIN
+probes:
+- host: elorian.ai
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: elorian.ai
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: elorian.ai
+  path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- host: elorian.ai
+  path: /.well-known/api-catalog
+  status: 404
+  file: null
+- host: elorian.ai
+  path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- host: elorian.ai
+  path: /.well-known/agent-card.json
+  status: 404
+  file: null
+- host: elorian.ai
+  path: /.well-known/agent.json
+  status: 404
+  file: null
+summary:
+  paths_probed: 7
+  hits: 0
+  documents_saved: 0
