@@ -18,6 +18,9 @@ description: 'Elorian AI Inc is a Palo Alto, California frontier AI research com
   offers only an early-access waitlist. It publishes no developer portal, no API
   documentation, no machine-readable specification, and no public API host.'
 url: https://raw.githubusercontent.com/api-evangelist/elorian-ai/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "It publishes no developer portal, no API documentation, no machine-readable specification, and no public API host."
 deliveryModel:
   model: saas
   open_source: false
