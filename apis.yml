@@ -56,10 +56,10 @@ modified: '2026-08-12'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Foundation Models
 - Multi-Modal
-- Computer-Vision
+- Computer Vision
 - Visual Reasoning
 - Robotics
 - Research
@@ -75,6 +75,8 @@ tags_raw:
 - Robotics
 - Research
 - Pre-Product
+- Machine-Learning
+- Computer-Vision
 apis: []
 maintainers:
 - FN: Kin Lane
